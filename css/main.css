@@ -51,6 +51,11 @@ body{
     border-radius: 90px;
 }
 
+.header-button:hover{
+    color:#11698E;
+    border:2px solid #11698E;
+}
+
 /* HERO */
 
 .hero{
@@ -98,6 +103,10 @@ body{
     color:#FFFFFF;
     
     border-radius: 90px;
+}
+
+.hero-button:hover{
+    background-color:#1AA17E;
 }
 
 /* SERVICOS */
