@@ -9,13 +9,13 @@
 
 body{
     font-family: 'Manrope', sans-serif;
+    font-size: 16px;
 }
 
 
 .container{
-    max-width: 1200px;
     margin: 0 auto;
-    padding: 32px 72px;
+    padding: 20px 20px;
 }
 
 .button{
@@ -23,17 +23,17 @@ body{
 }
 
 .intro{
-    font-size: 16px;
-    line-heigth: 24px;
-    padding-top: 64px;
+    font-size: 1rem;
+    line-heigth: 1.1rem;
+    padding-top: 28px;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 .subtitle{
-    font-size: 44px;
-    line-heigth; 56px;
+    font-size: 2.1rem;
+    line-heigth: 2.5rem;
     font-weight: bold;
-
     padding: 16px 0;
 }
 
@@ -58,42 +58,34 @@ body{
 
 /* HERO */
 
-.hero{
-    display: flex;
-    justify-content: space-between;
-    gap: 120px;
-}
-
 .hero-img {
-    max-width: 45%;
+    max-width: 100%;
     align-self: flex-end;
 }
 
 .hero-texts{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     gap: 16px;
-    padding: 64px 0;
+    padding: 28px 0;
 }
 
 .hero-title{
-    font-size: 56px;
-    line-heigth: 64px;
+    font-size: 2.2rem;
+    line-heigth: 1.8rem;
     color: #19456B;
     font-weight: bold;
 }
 
 .hero-paragraph{
-    padding: 16px 0 32px;
+    padding: 16px 0;
     color:#11698E;
-    font-size: 20px;
-    line-heigth: 28px;
+    font-size: 1.1rem;
+    line-heigth: 1rem;
 }
 
 .hero-button{
     display: flex;
     align-items: center;
+    justify-content: center;
     gap:20px;
 
     margin: 16px 0;
@@ -116,7 +108,7 @@ body{
 }
 
 .services{
-    padding-bottom: 96px;
+    padding-bottom: 48px;
 }
 
 .services-intro{
@@ -125,27 +117,25 @@ body{
 
 .services-subtitle{
     color: #FFF5FD;
+    padding: ;
 }
 
-.services-cards{
-    gap: 32px;
-    display: flex;
-    padding-top: 32px;
-}
 
 .services-card{
     background-color: #11698E;
     color: #FFFFFF;
-    border-radius: 32px;
+    border-radius: 6rem 6rem 32px 32px;
+    margin-top: 40px;
 }
 
 .services-card img{
-    max-width: 100%;
+    width: 100%;
 }
 
 .services-title{
     font-size: 24px;
     line-heigth: 32px;
+    font-weight: 700;
 
     padding: 32px 32px 8px;
 }
@@ -169,7 +159,7 @@ body{
     align-items: center;
     color: #11698E;
     gap: 20px;
-    padding:8px 0 16px;
+    padding:8px 0 6px;
 }
 
 /* FOOTER */
@@ -182,13 +172,76 @@ body{
     display:flex;
     flex-direction: column;
     color: #FFFFFF;
-    font-size: 16px;
-    line-header: 24px;
+    font-size: 1rem;
+    line-header: 1.5rem;
+    margin-top: 28px;
 }
 
-.logo-socials{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 48px 0;
+.logo-copy span{
+    padding: 18px 0;
+}
+
+.socials{
+    padding-bottom: 28px;
+}
+
+@media(min-width: 1024px){
+    .container{    
+        padding: 32px 72px;
+    }
+
+    .intro{
+        padding-top: 64px;
+    }
+
+    .subtitle{
+        font-size: 3rem;
+        line-heigth: 2.5rem;
+        font-weight: bold;
+        padding: 16px 0;
+    }
+    
+    .hero{
+        display: flex;
+        align-items: center;
+    }
+
+    .hero img{
+        width: 53%;
+    }
+
+    .hero-texts{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .hero-title{
+        font-size: 3rem;
+    }
+
+    .hero-paragraph{
+        font-size: 1.1rem;
+        line-heigth: 0.9rem;
+    }
+
+    .services-cards{
+        display: flex;
+        gap: 32px;
+        margin-bottom: 64px;
+    }
+
+    .logo-socials{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo-copy span{
+        padding: 16px 0;
+    }
+
+    .logo-copy{
+        margin-top: 16px;
+    }
 }
